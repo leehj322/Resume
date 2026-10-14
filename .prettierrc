@@ -1,0 +1,18 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["cva", "cx", "cn"],
+  "overrides": [
+    {
+      "files": "**/index.ts",
+      "options": {
+        "plugins": ["prettier-plugin-sort-re-exports", "prettier-plugin-tailwindcss"]
+      }
+    }
+  ]
+}
